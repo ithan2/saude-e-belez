@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 /*Configurações Gerais do Site*/
         :root{
             --preto: rgb(44, 44, 44);
@@ -15,18 +17,18 @@
         }
         *{margin: 0;border: 0;padding: 0;}
         html{font-family: Arial, Helvetica, sans-serif;font-size: 1em;}
-        header{background-color: var(--preto); color: var(--azul); padding: 1%; position:fixed; width: 100%; margin: 0;}
+        header{background-color: var(--violt); color: var(--azul); padding: 1%; position:fixed; width: 100%; margin: 0;}
         nav{display: block; text-align: center; padding: 5px; font-size: 1.3em; word-spacing: 8px;}
         a{text-decoration: none; color: var(--branco); font-weight: bold;}
         a:hover{color: var(--cinza);}
-        footer{background-color: var(--preto); color: var(--azul); padding: 1%; text-align: center; font-weight: bold;}
+        footer{background-color: var(--violt); color: var(--azul); padding: 1%; text-align: center; font-weight: bold;}
         body{background-color: var(--cinza);}
         main{background-color: var(--branco);
             padding: 20px;
              margin: auto;
             max-width: 1024px;
              border-radius: 16px;
-             box-shadow: 1px 1px 10px 2px var(--azul);
+             box-shadow: 1px 1px 10px 2px var(--cinza);
             }
 
             aside{
@@ -35,12 +37,12 @@
                 margin: auto;
                 max-width: 1024px;
                 border-radius: 16px;
-                box-shadow: 1px 1px 10px 2px var(--azul);}
+                box-shadow: 1px 1px 10px 2px var(--cinza);}
              
         /*Configurações de títulos*/
         h1{font-size: 2em; margin-top: 3%;}
         h2{font-size: 1.5em;}
-        h3{font-size: 1.5em;}
+        h3{font-size: 1.5em; font-family: "Pacifico", cursive;}
         h4{font-size: 1em;}
         h1,h2,h3,h4,h5,h6{padding-top: 0.25%;padding-bottom: 0.25%;}
 
