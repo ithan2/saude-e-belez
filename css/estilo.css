@@ -1,113 +1,237 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 /*Configurações Gerais do Site*/
-        :root{
-            --preto: rgb(44, 44, 44);
-            --cinza: rgb(194, 194, 194);
-            --azul:  rgb(65, 105, 225);
-            --branco:rgb(255, 255, 255);
-            --verde: rgb(21, 97, 21);
-            --verd2: rgb(31, 255, 31);
-          
-          
-            --violt: rgb(238,130,238);
-            --orchd: rgb(218,112,214);
-            --viodk: rgb(148,0,211);
-            --indig: rgb(75,0,130);
-        }
-        *{margin: 0;border: 0;padding: 0;}
-        html{font-family: Arial, Helvetica, sans-serif;font-size: 1em;}
-        header{background-color: var(--violt); 
-            color: var(--azul); 
-            padding: auto; 
-            padding-top: 10px;
-            position:fixed; 
-            width: 100%; 
-            margin: 0;
-            text-align: center;}
-        nav{display: block; text-align: center; padding: 5px; font-size: 1.3em; word-spacing: 8px;}
-        a{text-decoration: none; color: var(--branco); font-weight: bold;}
-        a:hover{color: var(--cinza);}
-        footer{background-color: var(--violt); color: var(--azul); padding: 1%; text-align: center; font-weight: bold;}
-        body{background-color: var(--branco);}
-        main{background-color: var(--branco);
-             padding: 20px;
-             margin: auto;
-             max-width: 1024px;
-            }
+:root {
+    --preto: rgb(44, 44, 44);
+    --cinza: rgb(194, 194, 194);
+    --azul: rgb(65, 105, 225);
+    --branco: rgb(255, 255, 255);
+    --verde: rgb(21, 97, 21);
+    --verd2: rgb(31, 255, 31);
 
-            aside{
-                background-color: var(--branco);
-                padding: 20px;
-                margin: auto;
-                max-width: 1024px;
-                border-radius: 16px;
-                box-shadow: 1px 1px 10px 2px var(--cinza);}
-             
-        /*Configurações de títulos*/
-        h1{font-size: 2em; margin-top: 3%;}
-        h2{font-size: 1.5em;}
-        h3{font-size: 3.5em; font-family: "Pacifico", cursive; text-shadow: 2px 2px 2px var(--preto);}
-        h4{font-size: 1.2em; text-shadow: 2px 2px 2px var(--preto);}
-        h1,h2,h3,h4,h5,h6{padding-top: 0.25%;padding-bottom: 0.25%;}
 
-        /*configurações de imagens*/
-        img{width: 100%;padding-top: 2%;}
-       
-        /*Configurações de Parágrafos*/
-        p{padding-top: 1%; padding-bottom: 1%;}
-       
-        /*Configurações de Parágrafos para dispositivos móveis*/
-        @media(min-width: 320px) and (max-width: 1100px){
-            p{padding-top: 3%; padding-bottom: 3%;}
-        }
-         /*Divs*/
-            .separador{margin-top: 8%;}
-            .separador-conteudo{margin-top: 0.5%;}
-         /*Configurações de Divs para dispositivos móveis*/
-         @media(min-width: 320px) and (max-width: 1100px){
-            .separador{margin-top: 19%;}
-            .separador-conteudo{margin-top: 0.5%;}
-        }
-        /*Configurações da Grade de conteudo*/
+    --violt: rgb(238, 130, 238);
+    --orchd: rgb(218, 112, 214);
+    --viodk: rgb(148, 0, 211);
+    --indig: rgb(75, 0, 130);
+}
 
-        .grid-conteudo{background-color: var(--branco); padding-top: 150px;}
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
 
-        .grid{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            max-width: 1200px;
-            margin: auto;
-            gap: 10px;
-        }
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
 
-        .grid div{background-color: var(--branco); text-align: center; padding: 2px;}
+header {
+    background-color: var(--violt);
+    color: var(--preto);
+    padding: auto;
+    padding-top: 10px;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
 
-        /*Configuração de grid para mobile*/
-        @media(min-width: 320px) and (max-width: 1100px){
+nav {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.3em;
+    word-spacing: 8px;
+}
 
-            .grid-conteudo{background-color: var(--branco);padding-top: 150px;}
+a {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: bold;
+}
 
-        .grid{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            max-width: 1200px;
-            margin: auto;
-            gap: 2px;
-        }
+a:hover {
+    color: var(--cinza);
+}
 
-        }
-        /*configurações para botões de ação*/
-        button{
-            padding: 8px 20px 8px 20px;
-            background-color: var(--verde);
-            color: var(--branco);
-            border-radius: 10px;
-            font-weight: bold;
-            font-size: 1.3em;
-            display: block;
-            margin: auto;
-            transition: 0.4s ease;
-        }
+footer {
+    background-color: var(--violt);
+    color: var(--azul);
+    padding: 1%;
+    text-align: center;
+    font-weight: bold;
+}
 
-        button:hover{background: var(--verd2);color: var(--preto);}
+body {
+    background-color: var(--branco);
+}
+
+main {
+    background-color: var(--branco);
+    padding: 20px;
+    margin: auto;
+    max-width: 1024px;
+}
+
+aside {
+    background-color: var(--branco);
+    padding: 20px;
+    margin: auto;
+    max-width: 1024px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 10px 2px var(--cinza);
+}
+
+/*Configurações de títulos*/
+h1 {
+    font-size: 2em;
+    margin-top: 3%;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 3.5em;
+    font-family: "Pacifico", cursive;
+    text-shadow: 2px 2px 2px var(--preto);
+}
+
+h4 {
+    font-size: 1.2em;
+    text-shadow: 2px 2px 2px var(--preto);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding-top: 0.25%;
+    padding-bottom: 0.25%;
+}
+
+/*configurações de imagens*/
+img {
+    width: 100%;
+    padding-top: 2%;
+}
+
+/*Configurações de Parágrafos*/
+p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/*Configurações de Parágrafos para dispositivos móveis*/
+@media(min-width: 320px) and (max-width: 1100px) {
+    p {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+}
+
+/*Divs*/
+.separador {
+    margin-top: 8%;
+}
+
+.separador-conteudo {
+    margin-top: 0.5%;
+}
+
+/*Configurações de Divs para dispositivos móveis*/
+@media(min-width: 320px) and (max-width: 1100px) {
+    .separador {
+        margin-top: 19%;
+    }
+
+    .separador-conteudo {
+        margin-top: 0.5%;
+    }
+}
+
+/*Configurações da Grade de conteudo*/
+
+.grid-conteudo {
+    background-color: var(--branco);
+    padding-top: 150px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    max-width: 1200px;
+    margin: auto;
+    gap: 10px;
+}
+
+.grid div {
+    background-color: var(--branco);
+    text-align: center;
+    padding: 2px;
+}
+/*Trabalhando com flexbox*/
+
+.grid-equipe {
+    background-color: var(--branco);
+    padding-top: 150px;
+}
+
+.grid-equipe-sb {
+    display: flex; /*Alterando o tipo de display para flex*/
+    justify-content: center; /*Centralizando horizontalmente*/
+    align-items: center; /*Centralizando verticalmente*/
+    flex-wrap: wrap; /*alinhar ou "Quebrar" conforme o tamanho da tela*/
+    max-width: 1200px;
+    margin: auto;
+    gap: 8px;
+    padding: auto;
+}
+
+.grid div {
+    background-color: var(--branco);
+    text-align: center;
+    padding: 2px;
+}
+/*Configuração de grid para mobile*/
+@media(min-width: 320px) and (max-width: 1100px) {
+
+    .grid-conteudo {
+        background-color: var(--branco);
+        padding-top: 150px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        max-width: 1200px;
+        margin: auto;
+        gap: 2px;
+    }
+
+}
+
+/*configurações para botões de ação*/
+button {
+    padding: 8px 20px 8px 20px;
+    background-color: var(--verde);
+    color: var(--branco);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    display: block;
+    margin: auto;
+    transition: 0.4s ease;
+}
+
+button:hover {
+    background: var(--verd2);
+    color: var(--preto);
+}
+
+ul{padding-left: 5%;}
