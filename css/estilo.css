@@ -17,18 +17,23 @@
         }
         *{margin: 0;border: 0;padding: 0;}
         html{font-family: Arial, Helvetica, sans-serif;font-size: 1em;}
-        header{background-color: var(--violt); color: var(--azul); padding: 1%; position:fixed; width: 100%; margin: 0;}
+        header{background-color: var(--violt); 
+            color: var(--azul); 
+            padding: auto; 
+            padding-top: 10px;
+            position:fixed; 
+            width: 100%; 
+            margin: 0;
+            text-align: center;}
         nav{display: block; text-align: center; padding: 5px; font-size: 1.3em; word-spacing: 8px;}
         a{text-decoration: none; color: var(--branco); font-weight: bold;}
         a:hover{color: var(--cinza);}
         footer{background-color: var(--violt); color: var(--azul); padding: 1%; text-align: center; font-weight: bold;}
-        body{background-color: var(--cinza);}
+        body{background-color: var(--branco);}
         main{background-color: var(--branco);
-            padding: 20px;
+             padding: 20px;
              margin: auto;
-            max-width: 1024px;
-             border-radius: 16px;
-             box-shadow: 1px 1px 10px 2px var(--cinza);
+             max-width: 1024px;
             }
 
             aside{
@@ -42,8 +47,8 @@
         /*Configurações de títulos*/
         h1{font-size: 2em; margin-top: 3%;}
         h2{font-size: 1.5em;}
-        h3{font-size: 1.5em; font-family: "Pacifico", cursive;}
-        h4{font-size: 1em;}
+        h3{font-size: 3.5em; font-family: "Pacifico", cursive; text-shadow: 2px 2px 2px var(--preto);}
+        h4{font-size: 1.2em; text-shadow: 2px 2px 2px var(--preto);}
         h1,h2,h3,h4,h5,h6{padding-top: 0.25%;padding-bottom: 0.25%;}
 
         /*configurações de imagens*/
@@ -66,7 +71,22 @@
         }
         /*Configurações da Grade de conteudo*/
 
-        #grid-conteudo{background-color: var(--cinza);}
+        .grid-conteudo{background-color: var(--branco); padding-top: 150px;}
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            max-width: 1200px;
+            margin: auto;
+            gap: 10px;
+        }
+
+        .grid div{background-color: var(--branco); text-align: center; padding: 2px;}
+
+        /*Configuração de grid para mobile*/
+        @media(min-width: 320px) and (max-width: 1100px){
+
+            .grid-conteudo{background-color: var(--branco);padding-top: 150px;}
 
         .grid{
             display: grid;
@@ -76,8 +96,7 @@
             gap: 2px;
         }
 
-        .grid div{background-color: var(--branco); text-align: center; padding: 2px;}
-
+        }
         /*configurações para botões de ação*/
         button{
             padding: 8px 20px 8px 20px;
