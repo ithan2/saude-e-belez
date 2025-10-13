@@ -105,21 +105,21 @@ main {
 
 aside {
     background-color: var(--branco);
-    padding: 20px;
+    padding: 1%;
     margin: auto;
-    max-width: 1024px;
-    border-radius: 16px;
-    box-shadow: 1px 1px 10px 2px var(--cinza);
+    width:90%;
 }
 
 /*Configurações de títulos*/
 h1 {
     font-size: 2em;
     margin-top: 3%;
+    color: var(--indig);
 }
 
 h2 {
     font-size: 1.5em;
+    color: var(--indig);
 }
 
 h3 {
@@ -148,7 +148,12 @@ img {
     width: 100%;
     padding-top: 2%;
 }
-
+.img-site {
+    width: 80%;
+    padding-top: 2%;
+    background: radial-gradient(var(--orchd), var(--branco), var(--branco));
+    border-radius: 100%;
+}
 /*Configurações de Parágrafos*/
 p {
     padding-top: 2%;
@@ -270,14 +275,14 @@ ul{padding-left: 5%;}
     text-align: center;
     height: 315px;
     padding:1%;
-    background-color: var(--violt);
+    background-color: rgba(238, 130, 238, 0.10);
     border-radius: 10px;
 }
 @media(min-width: 320px) and (max-width: 820px){
     div.video{
         position: relative;
         padding-bottom: 50%;
-        background-color: var(--violt);
+        background-color: rgba(238, 130, 238, 0.10);
         border-radius: 10px;
     }
     div.video > iframe{
@@ -297,6 +302,8 @@ ul{padding-left: 5%;}
     position: fixed;
     text-align: center;
     margin: 6em;
+    color: var(--indig);
+    text-shadow: 1px 1px 1px var(--branco);
 }
 @media(min-width: 320px) and (max-width: 820px){
     #whats{
@@ -308,6 +315,8 @@ ul{padding-left: 5%;}
     text-align: center;
     margin: 6em;
     margin-right: 9px;
+    color: var(--indig);
+    text-shadow: 1px 1px 1px var(--branco);
     z-index: 1;
     }
 }
