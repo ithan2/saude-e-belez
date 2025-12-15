@@ -6,6 +6,7 @@
   <link rel="shortcut icon" href="img/sb-logo.ico" type="image/x-icon">
   <title>Saúde & Beleza</title>
   <link rel="stylesheet" href="css/estilo.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -40,7 +41,27 @@
         <br>
         <h1>Agende sua avaliação hoje mesmo</h1>
         <br>
-        <h2ff>Seja a sua própria inspiração.</h2ff>
+        <h2>Seja a sua prioridade, cuide da sua saúde, bem estar e tenha uma vida plena.</h2>
+        
+        <script>
+
+          function escrita(elemento){
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+
+            textoArray.forEach((letra, i) => {
+              setTimeout(function(){
+                elemento.innerHTML += letra;
+              }, 80*i)
+            })
+          }
+          const animacao = document.querySelector('h2');
+          escrita(animacao);
+
+        </script>
+
+        <br>
+
         <p>O autocuidado é um ato de amor próprio que reflete diretamente na nossa saúde física e mental.</p>
         <br>
         <a class="btn" href="#">Agendar Avaliação</a>
@@ -64,11 +85,13 @@
       <br>
 
       <div class="video">
+        
         <iframe width="560" height="315"
           src="https://www.youtube.com/embed/3O7kf0ssMrk?si=KLwaSyBOGOPUk_ea"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           
       </div>
       <br>
       <a class="btn" href="#">Saiba Mais</a>
@@ -83,6 +106,33 @@
         <br>
         <li><strong>Consultoria de Autocuidado:</strong> Oferecemos sessões para quem deseja criar uma rotina de beleza e saúde personalizada, entendendo o que é essencial para alcançar um equilíbrio no dia a dia.</li>
       </ul>
+      <br>
+
+      <!-- Esta sessão estamos exibindo os preços dos serviços mesmo com o nome equipe -->  
+
+      <p id="servicos">CLIQUE EM AGENDAR E GANHE UMA SESSÃO GRATUITA</p>
+  
+      <section class="grid-equipe">
+
+      <div class="grid-equipe-sb">
+
+        <div class="membro">
+          <img src="img/facial.webp" alt="Tratamento Facial">
+          <a class="btn" href="#">Agendar</a>
+        </div>
+
+        <div class="membro">
+          <img src="img/cabelo.webp" alt="Tratamento Capilar">
+          <a class="btn" href="#">Agendar</a>
+        </div>
+
+        <div class="membro">
+          <img src="img/relaxamento.webp" alt="tratamento de Relaxamento">
+          <a class="btn" href="#">Agendar</a>
+        </div>
+
+      </div>
+    </section>
 
       <h2>Nossa Missão</h2>
       <br>
@@ -141,8 +191,21 @@
       WhatsApp: (38) 99166059 (Somente Mensagens) <br>
       CNPJ: 40.963.840/0001-74 <br>
     </p>
+     <h4>Redes Sociais</h4>
+     <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F&is_from_rle" target="_blank">
+      <img class="redes-sociais" src="img/Instagram.webp" alt="logo Instagram">
+       </a>
+      <a href="https://www.youtube.com/" target="_blank" target="_blank">
+      <img class="redes-sociais" src="img/Youtube.webp" alt="logo Tiktok">
+      </a>
+      <a href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fpt-BR%2F&lang=en&enter_method=mandatory" target="_blank">
+      <img class="redes-sociais" src="img/Tiktok.webp" alt="logo Youtube">
+      </a>
+    <br>
     <h6>Desenvolvido por: Equipe de Saúde.</h6>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>

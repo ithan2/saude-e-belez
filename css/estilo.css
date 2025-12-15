@@ -47,7 +47,7 @@ header {
   position: fixed;
   width: 100%;
   text-align: center;
-  z-index: 1000;
+  z-index: 1;
 }
 
 nav {
@@ -120,7 +120,7 @@ footer {
   background: linear-gradient(var(--orchd), var(--orchd), var(--violt));
   color: var(--branco);
   padding: 1%;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
   text-shadow: 1px 1px 1px var(--preto);
 }
@@ -166,10 +166,11 @@ p.especialistas {
   color: var(--indig);
   font-weight: bold;
 }
+p#servicos{text-align: center; color: var(--indig); font-weight: bold; font-size: 1.3em; text-decoration: underline;}
 
 @media (max-width: 820px) {
   p {
-    padding: 3% 0;
+    padding: 3% 3%;
   }
 }
 
@@ -299,4 +300,8 @@ aside {
     margin: 6em 9px;
     z-index: 10;
   }
+}
+.redes-sociais {
+  width: 30px;
+  height: 30px;
 }
